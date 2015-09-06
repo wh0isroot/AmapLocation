@@ -1,0 +1,17 @@
+<manifest package="xyz.tianx.amaplocation"
+    android:versionCode="1"
+    android:versionName="1.0" android:installLocation="internalOnly" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-sdk
+        android:minSdkVersion="15"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name">
+        <meta-data android:value="true" android:name="xposedmodule"/>
+        <meta-data android:value="This is a module which change LocationProvider to com.amap.android.location" android:name="xposeddescription"/>
+        <meta-data android:value="60" android:name="xposedminversion"/>
+    </application>
+
+</manifest>
